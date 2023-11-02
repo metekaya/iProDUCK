@@ -1,5 +1,5 @@
 <h1 align="center">
-    <img height="120" alt="iProDUCK" src="" />
+    <img height="120" alt="iProDUCK" src="assets/iProDUCK.ico" />
     <br>
     iProDUCK - Personal Productivity Assistant
 </h1>
