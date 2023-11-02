@@ -37,7 +37,13 @@ Before you begin, ensure that you have met the following requirements:
   - Create the executable file using the following command: `pyinstaller --onefile main.py` or if you want to run without the cmd you can add `--noconsole` option.
   - Locate the generated executable file in the `dist` directory.
   - Run the executable file to start the iProDUCK productivity assistant.
-    **For Windows:** You can run the script on the background whenever you start your system. 1. Open the "Run" dialog by pressing `Windows key + R`. 2. Type `shell:startup` and press Enter. 3. This will open the `Startup` directory. 4. Copy the executable file (`iProDUCK.exe`) into this directory (also you can copy the shortcut of it). 5. The application will now start automatically every time you log in to your computer.
+  
+  **For Windows:** You can run the script on the background whenever you start your system.
+    1. Open the "Run" dialog by pressing `Windows key + R`.
+    2. Type `shell:startup` and press Enter.
+    3. This will open the `Startup` directory.
+    4. Copy the executable file (`iProDUCK.exe`) into this directory (also you can copy the shortcut of it).
+    5. The application will now start automatically every time you log in to your computer.
 
 Please note that I have no idea how it works on macOS, as I don't own a Mac because I'm not getting paid enough to buy one.. Actually I'm not getting paid at all. HEADHUNTERS pls hire me! If you're using a Mac, you're on your own! (Dont' you dare to tell me to install Linux!!)
 
