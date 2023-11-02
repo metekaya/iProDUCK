@@ -1,21 +1,26 @@
+import os
 import time
 import threading
 
+from dotenv import load_dotenv
+from watchdog.observers import Observer
+
 from utils.vs_code_tracker import track_vs_code_usage
 from utils.file_organizer import DownloadHandler
-from watchdog.observers import Observer
 
 
 def main():
-    print("it works!")
+    load_dotenv()
+    DOWNLOAD_FOLDER_PATH = os.getenv('DOWNLOAD_FOLDER_PATH')
+    print("SCRIPT STARTED")
 
-    # vs_code_thread = threading.Thread(target=track_vs_code_usage(120))
-    # vs_code_thread.start()
+    vs_code_thread = threading.Thread(target=track_vs_code_usage, args=(120,))
+    vs_code_thread.start()
     
-    download_path = 'C:\\Users\\username\\Downloads'
-    event_handler = DownloadHandler(download_path)
+    
+    event_handler = DownloadHandler(DOWNLOAD_FOLDER_PATH)
     observer = Observer()
-    observer.schedule(event_handler, download_path, recursive=False)
+    observer.schedule(event_handler, DOWNLOAD_FOLDER_PATH, recursive=False)
     observer.start()
     print("OBSERVER IS LOOKING FOR FILE CHANGES")
     try: 
@@ -26,4 +31,7 @@ def main():
     observer.join()
 
 if __name__ == "__main__":
-    main()
+    try:
+        main()
+    except KeyboardInterrupt:
+        print("Program stopped by the user")

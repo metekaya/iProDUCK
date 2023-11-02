@@ -16,7 +16,7 @@ class DownloadHandler(FileSystemEventHandler):
             'PDF': ['.pdf'],
             'Documents': ['.xlsx', '.doc', '.docx', '.pptx','.txt'],
             'Videos': ['.mp4', '.mov', '.avi'],
-            'Archives': ['.zip', '.rar', '.tar'],
+            'Archives': ['.zip', '.rar', '.tar', '.gz'],
             'Torrents': ['.torrent'],
         }
 

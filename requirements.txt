@@ -12,6 +12,7 @@ pyinstaller==6.1.0
 pyinstaller-hooks-contrib==2023.10
 pynput==1.7.6
 pypiwin32==223
+python-dotenv==1.0.0
 pywin32==306
 pywin32-ctypes==0.2.2
 six==1.16.0
