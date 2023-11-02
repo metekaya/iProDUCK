@@ -24,5 +24,5 @@ def track_vs_code_usage(threshold=30):
             if elapsed_minutes < threshold:
                 message = f"You've been using vs code for {elapsed_minutes:.2f} minutes. You need to study more!"
                 toaster.show_toast("VS Code Usage Notifier",
-                                   message, duration=10)
+                                   message, duration=10, icon_path="assets\iProDUCK.ico")
         time.sleep(15)  # check every 15 seconds
