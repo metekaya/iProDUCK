@@ -53,4 +53,4 @@ If you have any questions, suggestions, or feedback, please feel free to reach o
 
 ---
 
-iProDUCK(I don't know why I named it like that, it's so cringe sorry 🤣) is built purely to try out my capabilities, it does not hold any copyrights or any kind of permission. Or does it 😈
+iProDUCK(I don't know why I named it like that) is built purely to try out my capabilities, it does not hold any copyrights or any kind of permission. Or does it 😈
